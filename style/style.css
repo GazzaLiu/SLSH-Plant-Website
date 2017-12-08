@@ -6,7 +6,7 @@ html
   padding: 0;}
 
 body
-{ font: normal .80em 'trebuchet ms', arial, sans-serif;
+{ font: normal .80em "Microsoft JhengHei", 'trebuchet ms', arial, sans-serif;
   background: #F0EFE2;
   color: #777;}
 
@@ -18,13 +18,13 @@ img
 { border: 0;}
 
 h1, h2, h3, h4, h5, h6 
-{ font: normal 175% 'century gothic', arial, sans-serif;
+{ font: normal 175% "Microsoft JhengHei", 'century gothic', arial, sans-serif;
   color: #43423F;
   margin: 0 0 15px 0;
   padding: 15px 0 5px 0;}
 
 h2
-{ font: normal 175% 'century gothic', arial, sans-serif;
+{ font: normal 175% "Microsoft JhengHei", 'century gothic', arial, sans-serif;
   color: #1293EE;}
 
 h4, h5, h6
@@ -99,12 +99,15 @@ ol li
   background: #667F03 url(logo.png) no-repeat;}
 
 #logo #logo_text 
-{ position: absolute; 
-  top: 20px;
-  left: 0;}
+{
+	position: absolute;
+	top: 20px;
+	left: 0;
+	width: 700;
+}
 
 #logo h1, #logo h2
-{ font: normal 300% 'century gothic', arial, sans-serif;
+{ font: normal 300% "Microsoft JhengHei", 'century gothic', arial, sans-serif;
   border-bottom: 0;
   text-transform: none;
   margin: 0;}
@@ -124,10 +127,12 @@ ol li
   color: #DDD;}
 
 #menubar
-{ width: 877px;
-  height: 72px;
-  padding: 0;
-  background: #515D25 url(menu.png) repeat-x;} 
+{
+	width: 1000px;
+	height: 72px;
+	padding: 0;
+	background: #515D25 url(menu.png) repeat-x;
+} 
 
 ul#menu, ul#menu li
 { float: left;
@@ -139,7 +144,7 @@ ul#menu li
 
 ul#menu li a
 { letter-spacing: 0.1em;
-  font: normal 100% "Microsoft JhengHei", 'lucida sans unicode', arial, sans-serif;
+  font: normal 125% "Microsoft JhengHei", 'lucida sans unicode', arial, sans-serif;
   display: block; 
   float: left; 
   height: 37px;
@@ -155,11 +160,19 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
   background: #373F1D url(menu_select.png) repeat-x;}
 
 #site_content
-{ width: 837px;
-  overflow: hidden;
-  margin: 0 auto 0 auto;
-  padding: 20px 24px 20px 37px;
-  background: #FFF url(content.png) repeat-y;} 
+{
+	width: 960px;
+	overflow: hidden;
+	margin-top: 0;
+	margin-right: auto;
+	margin-bottom: 0;
+	margin-left: auto;
+	height: auto;
+	background-color: #FFF;
+	background-image: none;
+	background-repeat: no-repeat;
+	padding: 20px;
+} 
 
 .sidebar
 { float: right;
@@ -185,9 +198,13 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
   text-decoration: none;} 
 
 #content
-{ text-align: left;
-  width: 595px;
-  padding: 0;}
+{
+	text-align: left;
+	width: 800px;
+	padding: 20;
+	float: none;
+	margin: auto;
+}
 
 #content ul
 { margin: 2px 0 22px 0px;}
@@ -200,7 +217,7 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
   line-height: 1.5em;}
 
 #footer
-{ width: 878px;
+{ width: 1000px;
   font: normal 100% 'lucida sans unicode', arial, sans-serif;
   height: 33px;
   padding: 24px 0 5px 0;
@@ -282,15 +299,32 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
   margin: 0 0 20px 0;}
   
 table
-{ margin: 10px 0 30px 0;}
+{
+	margin-top: 30px;
+	margin-right: auto;
+	margin-bottom: 30px;
+	margin-left: auto;
+}
 
-table tr th, table tr td
-{ background: #3B3B3B;
-  color: #FFF;
-  padding: 7px 4px;
-  text-align: left;}
-  
-table tr td
-{ background: #F0EFE2;
+/* plant table */
+#plant_table table tr td
+{ background: #FFFFFF;
   color: #47433F;
-  border-top: 1px solid #FFF;}
+  height: 40px;
+  font-size: 18px;
+  text-align: center;
+  border-collapse: collapse;
+  border-bottom: 1px solid #CCCCCC;}
+
+/* plant table image */
+.plant_table_img
+{
+	height: 200px;
+	width: 240px;
+}
+
+/* plant information image */
+.plant_info_img
+{
+	width: 240px;
+}

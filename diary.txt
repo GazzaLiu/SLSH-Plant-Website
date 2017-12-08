@@ -1,0 +1,13 @@
+﻿-----2017/11/28-----
+模板網頁：https://www.html5webtemplates.co.uk/templates.html
+選定模板：https://www.html5webtemplates.co.uk/templates/colour_green/index.html
+強制設定文件編碼為UTF-8，解決無法顯示中文問題，並將顯示中文文字設定為微軟正黑體
+Google Sheet建置資料庫教學：http://blog.jim60105.com/2015/06/google-database.html
+
+-----2017/12/04-----
+css外觀調整
+
+-----2017/12/07-----
+css外觀調整
+主要植物表格外觀調整完畢
+完成植物資訊表格
