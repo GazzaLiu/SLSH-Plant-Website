@@ -6,7 +6,7 @@ html
   padding: 0;}
 
 body
-{ font: normal .80em "Microsoft JhengHei", 'trebuchet ms', arial, sans-serif;
+{ font: normal 0.8em "Microsoft JhengHei", 'trebuchet ms', arial, sans-serif;
   background: #F0EFE2;
   color: #777;}
 
@@ -218,13 +218,13 @@ ul#menu li a:hover, ul#menu li.selected a, ul#menu li.selected a:hover
 
 #footer
 { width: 1000px;
-  font: normal 100% 'lucida sans unicode', arial, sans-serif;
+  font: normal 100% "Microsoft JhengHei", 'lucida sans unicode', arial, sans-serif;
   height: 33px;
   padding: 24px 0 5px 0;
   text-align: center; 
   background: #29425E url(footer.png) repeat-x;
   color: #FFF;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   letter-spacing: 0.1em;}
 
 #footer a
@@ -337,6 +337,30 @@ table tr td
 .plant_info_img
 {
 	width: 240px;
+}
+
+/* principal's word title */
+#principal_words_title
+{
+	font-size: 225%;
+}
+
+/* principal's word content */
+#principal_words_content
+{
+	font-size: 150%;
+}
+
+/* editor's word title */
+#editor_words_title
+{
+	font-size: 225%;
+}
+
+/* editor's word content */
+#editor_words_content
+{
+	font-size: 150%;
 }
 
 /* button */
