@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>樹林高中校園花草</title>
+  <meta name="description" content="Plant of Shu Lin Senior High School"/>
+  <meta name="keywords" content="Plant, Shu Lin Senior High School"/>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+  <link rel="stylesheet" type="text/css" href="../style/style.css" title="style"/>
+</head>
+<script>
+	function forwardPage(page) {
+		var str = "?page=" + page;
+		location.href = str;
+	}
+	function forwardTable(index) {
+		var str = "./index/table.html?index=" + index;
+		location.href = str;
+	}
+</script>
+<body>
+  <div id="main">
+    <div id="header">
+      <div id="logo">
+        <div id="logo_text">
+          <h1><a href="../index.html">樹林高中<span class="logo_colour">校園花草</span></a></h1>
+          <h2>Plant of Shu Lin Senior High School.</h2>
+        </div>
+      </div>
+      <div id="menubar">
+        <ul id="menu">
+          <li><a href="../index.html">首頁</a></li>
+          <li><a href="../campus_plant/index.html">校園植物</a></li>
+          <li><a href="../aboriginal_plant/index.html">原住民族植物</a></li>
+          <li class="selected"><a href="./index.html">食草植物</a></li>
+          <li><a href="../aquatic_plant/index.html">水生植物</a></li>
+          <li><a href="../learning_sheet/index.html">學習單</a></li>
+          <li><a href="../campus_scenery/index.html">校園美景</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="site_content">
+		<div id="content" style="text-align:center;">
+			<br><br>
+			<h3>網頁施工中，敬請期待！</h3>
+			<p style="font-size:250%;">Comming Soon</p>
+			<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+		</div>
+    </div>
+    <div id="content_footer"></div>
+    <div id="footer">Copyright &copy; 新北市立樹林高級中學 | Tel：(02)8685-2011 | Fax：(02)8685-4261 | <a href="mailto:mis@slsh.ntpc.edu.tw">Email：mis@slsh.ntpc.edu.tw</a></div>
+  </div>
+  <script type="text/javascript">
+	function showPageTable(index) {
+		var str = "page_" + index;
+		var e = document.getElementById(str);
+		e.style.display = "block";
+		/*if (x.style.display === "none") {
+			x.style.display = "block";
+		} else {
+			x.style.display = "none";
+		}*/
+	}
+	var strUrl = location.search;
+	var getPara, ParaVal;
+	var aryPara = [];
+	if (strUrl.indexOf("?") != -1) {
+		var getSearch = strUrl.split("?");
+		getPara = getSearch[1].split("&");
+		for (i = 0; i < getPara.length; i++) {
+			ParaVal = getPara[i].split("=");
+			aryPara.push(ParaVal[0]);
+			aryPara[ParaVal[0]] = ParaVal[1];
+		}
+	showPageTable(ParaVal[1]);
+	}
+	else {
+		showPageTable('01');
+	}
+  </script>
+</body>
+</html>
